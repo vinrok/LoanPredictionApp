@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="shortcut icon" type="image/jpg" href="{{ url_for('static', filename='images/favicon.jpg') }}"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -29,12 +31,13 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-light bg-warning fixed-top">
           <div class="container">
-            <a class="navbar-brand mr-4" href="/">Prediction for Loan Approval</a>
+            <a class="navbar-brand mr-4" href="#">Prediction for Loan Approval</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto mt-1">
+				<a class="nav-item nav-link text-danger" href="{{ url_for('index') }}">Home</a>
 				<a class="nav-item nav-link text-danger" href="{{ url_for('apply') }}">Prediction</a>
               </div>
             </div>

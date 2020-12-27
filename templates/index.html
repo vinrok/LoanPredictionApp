@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+<!-- overrides block content on layout.html -->
+{% block content %}
+
+		<div class="row">
+			<div class="col-md-6">
+				<article class="media content-section">
+					<div class="media-body">
+						<div class="article-metadata">
+							<h3 class="article-title">Background</h3>
+						</div>
+						<img src="https://dphi-courses.s3.ap-south-1.amazonaws.com/Datathons/loan.png" class="img-fluid" alt="">
+						<br> <br>
+						<p class="article-content lead bg-light">The loan application is used by borrowers to apply for a loan. The loan application plays an important role in deciding whether the borrower/user should be granted loan or not. The lender procures basic details from the user via this application which is then further analysed for loan grant.</p>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-6" style="padding: 1em;">
+				<article class="media content-section">
+					<div class="media-body">
+						<div class="article-metadata">
+							<h3 class="article-title">Problem Statement</h3>
+						</div>
+						<p class="article-content lead bg-light">The director of SZE bank identified that going through the loan applications to filter the people who can be granted loans or need to be rejected is a tedious and time-consuming process. He wants to automate it and increase his bank’s efficiency.</p>
+					</div>
+				</article>
+				<article class="media content-section">
+					<div class="media-body">
+						<div class="article-metadata">
+							<h3 class="article-title">Objective</h3>
+						</div>
+						<p class="article-content lead bg-light">The idea behind this ML project is to perform Exploratory Data Analysis, Visualization and build an ML model along with a web application that the bank can use to classify if a user can be granted a loan or not.</p>
+					</div>
+				</article>
+			</div>
+		</div>
+		
+		<div class="row justify-content-md-center">
+		<div class="col-md-4">
+			<!-- Dataset -->
+			<div class="content-section">
+			  <div class="article-metadata">
+				<h3 class="article-title">
+				  Dataset
+				  <small class="text-muted" style="font-size: 15px;">
+					  <a href="https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_train.csv" target="_blank">
+						  [source]
+					  </a>
+				  </small>
+				</h3>
+			  </div>
+
+			  <p class="article-content text-muted text-justify bg-light">The dataset contains information about Loan Applicants. There are 12 independent features and 1 target/dependent column. This dataset includes attributes like Loan_ID, Gender, Applicant_Income, if the loan applicant is married or not, the level of education, etc.</p>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<!-- References -->
+			<div class="content-section">
+			  <div class="article-metadata">
+				<h3 class="article-title">
+				  References
+				</h3>
+			  </div>
+
+			  <ul class="list-group">
+				<li class="list-group-item list-group-item-light">
+				  <a href="https://dphi.tech/practice/challenge/54" target="_blank">DPhi Datathon 54</a>
+				</li>
+				<li class="list-group-item list-group-item-light">
+				  <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap v5.0</a>
+				</li>
+			  </ul>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+			<!-- About -->
+			<div class="content-section">
+			  <div class="article-metadata">
+				<h3 class="article-title">
+				  About
+				</h3>
+			  </div>
+
+			  <p class="article-content text-muted bg-light" style="text-align:justify">I built this app for the final assignment as a part of <a href="https://dphi.tech/bootcamps/machine-learning-online-bootcamp/" target="_blank">DPhi's Online Machine Learning Bootcamp</a>. For this I used technologies such as Flask, HTML/CSS, Python libraries and deployed on Heroku.</p>
+
+			  <div style="text-align:center">
+
+				<p class="text-muted">Connect with me on social media</p>
+
+				<a class="btn btn-social-icon btn-github" href="https://vinrok.github.io" target="_blank">
+				  <span class="fa fa-github" style="color: white;"></span>
+				</a>
+
+				<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/vinay-chitrakathi" target="_blank">
+				  <span class="fa fa-linkedin" style="color: white;"></span>
+				</a>
+
+				<a class="btn btn-social-icon btn-google" href="mailto:vchitrakathi01@gmail.com" target="_blank">
+				  <span class="fa fa-google" style="color: white;"></span>
+				</a>
+			  </div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+{% endblock content %}

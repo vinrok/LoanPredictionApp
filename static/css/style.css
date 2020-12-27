@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body { 
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+	background: #092756;
+	color: #fff;
+	font-size: 18px;
+	text-align:center;
+	letter-spacing:1.2px;
+	background: -moz-radial-gradient(-10% 80%, ellipse cover, rgba(14,128,18,.4) 10%,rgba(14,8,76,0) 40%), -moz-linear-gradient(-45deg,  #670d10 0%, #045756 100%);
+	background: -webkit-radial-gradient(-10% 80%, ellipse cover, rgba(14,128,18,.4) 10%,rgba(14,8,76,0) 40%), -webkit-linear-gradient(-45deg,  #670d10 0%,#045756 100%);
+	background: -o-radial-gradient(-10% 80%, ellipse cover, rgba(14,56,18,.4) 10%,rgba(14,8,76,0) 40%), -o-linear-gradient(-45deg,  #670d10 0%,#045756 100%);
+	background: -ms-radial-gradient(-10% 80%, ellipse cover, rgba(14,128,18,.4) 10%,rgba(14,8,76,0) 40%), -ms-linear-gradient(-45deg,  #670d10 0%,#045756 100%);
+	background: -webkit-radial-gradient(-10% 80%, ellipse cover, rgba(14,128,18,.4) 10%,rgba(14,8,76,0) 40%), linear-gradient(135deg,  #670d10 0%,#045756 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#094556',GradientType=2 );
+
+}
+
+
+input { 
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 10px; 
+	background: rgba(80,50,230,0.15);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 15px;
+	color: #fff123;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(140,140,140,0.4), 0 1px 1px rgba(255,255,255,0.2); }

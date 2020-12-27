@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+<!-- overrides block content on layout.html -->
+{% block content %}
+	<div class="container">
+		<div class="row">
+		
+			<div class="col-md-10 mx-auto">
+				<!-- Form to enter new data for predictions  -->
+				 <form action="{{ url_for('predict') }}" method="POST">
+					<div class="form-group row">
+						<div class="col-sm-6">
+							<input type="text" name="gender" placeholder="Gender" required="required" data-toggle="tooltip" data-placement="top" title="Male/Female" /><br>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="married" placeholder="Married" required="required" data-toggle="tooltip" data-placement="top" title="Yes/No" /><br>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-6">
+							<input type="text" name="dependents" placeholder="Dependents" required="required" data-toggle="tooltip" data-placement="top" title="No. of people dependent on the applicant (0,1,2,3+)" /><br>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="education" placeholder="Education" required="required" data-toggle="tooltip" data-placement="top" title="Education level of the applicant (Graduate, Not Graduate)" /><br>
+						</div>				
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-6">
+							<input type="text" name="selfEmployed" placeholder="Self Employed" required="required" data-toggle="tooltip" data-placement="top" title="Yes/No" /><br>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="loanAmount" placeholder="Loan Amount" required="required" data-toggle="tooltip" data-placement="top" title="Enter the loan amount for which you are applying." /><br>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-6">
+								<input type="text" name="applicantIncome" placeholder="Applicant Income" required="required" data-toggle="tooltip" data-placement="top" title="Enter the applicant income."/><br>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="coapplicantIncome" placeholder="Copplicant Income" required="required" data-toggle="tooltip" data-placement="top" title="Enter the coapplicant income."/><br>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-6">
+							<input type="text" name="loanAmtTerm" placeholder="Loan Amount Term" required="required" data-toggle="tooltip" data-placement="top" title="Enter the loan amount duration (in days)" /><br>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="creditHistory" placeholder="Credit History" required="required" data-toggle="tooltip" data-placement="top" title="1--> if all debts paid, 0--> otherwise" /><br>
+						</div>				
+					</div>
+					
+					<div class="form-group row justify-content-center">
+						<div class="col-sm-6">
+							<input type="text" name="propertyArea" placeholder="Property Area" required="required" data-toggle="tooltip" data-placement="top" title="Enter the Area. i.e. ['Rural', 'Semiurban', 'Urban']" /><br>
+						</div>				
+					</div>
+					<br>				
+					
+					<div class="text-center">
+						<button type="submit" class="btn btn-outline-primary btn-lg">Predict</button>
+					</div>
+					
+				</form>
+				
+				
+			</div>
+			
+		</div>
+ 	   <br>
+	   <br>
+
+	</div>
+{% endblock content %}

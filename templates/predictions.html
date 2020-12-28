@@ -10,16 +10,16 @@
 				 <form action="{{ url_for('predict') }}" method="POST">
 					<div class="form-group row">
 						<div class="col-sm-6">
-							<input type="text" name="gender" placeholder="Gender" required="required" data-toggle="tooltip" data-placement="top" title="Male/Female" /><br>
+							<input type="text" name="gender" placeholder="Gender" required="required" data-toggle="tooltip" data-placement="top" title="Enter: Male or Female" /><br>
 						</div>
 						<div class="col-sm-6">
-							<input type="text" name="married" placeholder="Married" required="required" data-toggle="tooltip" data-placement="top" title="Yes/No" /><br>
+							<input type="text" name="married" placeholder="Married" required="required" data-toggle="tooltip" data-placement="top" title="Enter: Yes or No" /><br>
 						</div>
 					</div>
 					
 					<div class="form-group row">
 						<div class="col-sm-6">
-							<input type="text" name="dependents" placeholder="Dependents" required="required" data-toggle="tooltip" data-placement="top" title="No. of people dependent on the applicant (0,1,2,3+)" /><br>
+							<input type="text" name="dependents" placeholder="Dependents" required="required" data-toggle="tooltip" data-placement="top" title="Enter No. of people dependent on the applicant i.e. (0,1,2,3+)" /><br>
 						</div>
 						<div class="col-sm-6">
 							<input type="text" name="education" placeholder="Education" required="required" data-toggle="tooltip" data-placement="top" title="Education level of the applicant (Graduate, Not Graduate)" /><br>
@@ -28,19 +28,19 @@
 					
 					<div class="form-group row">
 						<div class="col-sm-6">
-							<input type="text" name="selfEmployed" placeholder="Self Employed" required="required" data-toggle="tooltip" data-placement="top" title="Yes/No" /><br>
+							<input type="text" name="selfEmployed" placeholder="Self Employed" required="required" data-toggle="tooltip" data-placement="top" title="Enter: Yes/No" /><br>
 						</div>
 						<div class="col-sm-6">
-							<input type="text" name="loanAmount" placeholder="Loan Amount" required="required" data-toggle="tooltip" data-placement="top" title="Enter the loan amount for which you are applying." /><br>
+							<input type="text" name="loanAmount" placeholder="Loan Amount" required="required" data-toggle="tooltip" data-placement="top" title="Enter the loan amount for which you are applying in the range (0 - 9999)." /><br>
 						</div>
 					</div>
 					
 					<div class="form-group row">
 						<div class="col-sm-6">
-								<input type="text" name="applicantIncome" placeholder="Applicant Income" required="required" data-toggle="tooltip" data-placement="top" title="Enter the applicant income."/><br>
+								<input type="text" name="applicantIncome" placeholder="Applicant Income" required="required" data-toggle="tooltip" data-placement="top" title="Enter the applicant income in the range (0 - 9999)"/><br>
 						</div>
 						<div class="col-sm-6">
-							<input type="text" name="coapplicantIncome" placeholder="Copplicant Income" required="required" data-toggle="tooltip" data-placement="top" title="Enter the coapplicant income."/><br>
+							<input type="text" name="coapplicantIncome" placeholder="Copplicant Income" required="required" data-toggle="tooltip" data-placement="top" title="Enter the coapplicant income in the range (0 - 9999)."/><br>
 						</div>
 					</div>
 					
@@ -49,13 +49,13 @@
 							<input type="text" name="loanAmtTerm" placeholder="Loan Amount Term" required="required" data-toggle="tooltip" data-placement="top" title="Enter the loan amount duration (in days)" /><br>
 						</div>
 						<div class="col-sm-6">
-							<input type="text" name="creditHistory" placeholder="Credit History" required="required" data-toggle="tooltip" data-placement="top" title="1--> if all debts paid, 0--> otherwise" /><br>
+							<input type="text" name="creditHistory" placeholder="Credit History" required="required" data-toggle="tooltip" data-placement="top" title="Enter 1--> if all debts paid, 0--> otherwise" /><br>
 						</div>				
 					</div>
 					
 					<div class="form-group row justify-content-center">
 						<div class="col-sm-6">
-							<input type="text" name="propertyArea" placeholder="Property Area" required="required" data-toggle="tooltip" data-placement="top" title="Enter the Area. i.e. ['Rural', 'Semiurban', 'Urban']" /><br>
+							<input type="text" name="propertyArea" placeholder="Property Area" required="required" data-toggle="tooltip" data-placement="top" title="Enter the Area. i.e. [Rural, Urban or Semiurban]" /><br>
 						</div>				
 					</div>
 					<br>				
